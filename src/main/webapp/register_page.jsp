@@ -31,24 +31,24 @@
 						Here
 					</div>
 					<div class="card-body">
-						<form>
+						<form action="RegisterServlet" method="POST">
 							<div class="form-group">
 								<label for="user_name">User Name</label> <input
-									type="text" class="form-control" id="user_name"
+									type="text" class="form-control" name="user_name"
 									aria-describedby="emailHelp" placeholder="Enter name">
 							</div>
 
 
 							<div class="form-group">
-								<label for="exampleInputEmail1">Email address</label> <input
-									type="email" class="form-control" id="exampleInputEmail1"
+								<label for="user_email">Email address</label> <input
+									type="email" class="form-control" id="user_email" name="user_email"
 									aria-describedby="emailHelp" placeholder="Enter email">
 								<small id="emailHelp" class="form-text text-muted">We'll
 									never share your email with anyone else.</small>
 							</div>
 							<div class="form-group">
-								<label for="exampleInputPassword1">Password</label> <input
-									type="password" class="form-control" id="exampleInputPassword1"
+								<label for="user_pass">Password</label> <input
+									type="password" class="form-control" id="user_pass" name="user_pass"
 									placeholder="Password">
 							</div>
 							
@@ -60,14 +60,14 @@
 							
 							<div class="form-group">
 								<label for="about">Tell us about yourself</label> <textarea
-									class="form-control" id="about"
+									class="form-control" id="about" name="about"
 									placeholder="About yourself"></textarea>
 							</div>
 							
 							<div class="form-check">
-								<input type="checkbox" class="form-check-input"
-									id="exampleCheck1"> <label class="form-check-label"
-									for="exampleCheck1">Agree Terms and condition</label>
+								<input type="checkbox" class="form-check-input" name="condition" 
+									id="condition"> <label class="form-check-label"
+									for="condition">Agree Terms and condition</label>
 							</div>
 							<button type="submit" class="btn btn-primary">Submit</button>
 						</form>
